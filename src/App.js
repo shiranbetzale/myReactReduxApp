@@ -52,7 +52,7 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home - search</Link>
+              <Link to="/" id='homeLink'>Home - search</Link>
             </li>
             <li>
               <Link to="/dog1">dog1</Link>

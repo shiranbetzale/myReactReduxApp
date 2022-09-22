@@ -22,6 +22,7 @@ function DdlList(props) {
         </option>
         ))}
       </select> 
+      {errors.type && <span>This field is required</span>}
 
       {
         str !== "" &&
@@ -37,6 +38,7 @@ function DdlList(props) {
         ))}
       </select>
       }
+      {errors.subType && <span>This field is required</span>}
 
       {
         subNameDog !== "" &&
@@ -46,7 +48,8 @@ function DdlList(props) {
       {errors.numOfImages && <span>This field is required and between 1-6</span>}
 
 
-      <input type="submit" />
+      <button  className='btn' data-testid="btn" >submit</button>
+      {/* <input type="submit" className='btn' data-testid="btn" value='submit' /> */}
     </form>
   );
 }
