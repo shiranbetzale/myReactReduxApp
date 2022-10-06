@@ -1,9 +1,8 @@
 import 'jest-dom/extend-expect';
 import 'react-testing-libary/cleanup-after-each';
 import React from "react";
-import {fireEvent, render} from '@testing-library/react';
-import DdlList from '../DdlPage';
 import ImagePage from '../ImagePage';
+import ReactDOM from 'react-dom'
 
 const url=
     "https://images.dog.ceo/breeds/cattledog-australian/IMG_1042.jpg ";
